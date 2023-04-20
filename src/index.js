@@ -1,11 +1,12 @@
 import "./style.css";
+import homeContent from "./home.js";
 import fishIcon from "./images/fish_logo.png";
 import githubIcon from "./images/github_icon.svg";
 
 const content = document.querySelector("#content");
 
 document.body.insertBefore(createHeader(), content);
-content.appendChild(createHomeContent());
+content.appendChild(homeContent());
 document.body.appendChild(createFooter());
 
 function createHeader() {
@@ -50,15 +51,6 @@ function createHeader() {
   header.appendChild(navigator);
 
   return header;
-}
-
-function createHomeContent() {
-  const homeContent = document.createElement("div");
-  homeContent.classList.add("home_content");
-  homeContent.textContent =
-    "Traditional Japanese cuisine.\r\nAlways fresh, always delicious.";
-
-  return homeContent;
 }
 
 function createFooter() {
