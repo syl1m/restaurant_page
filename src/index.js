@@ -1,5 +1,7 @@
 import "./style.css";
 import homeContent from "./home.js";
+import menuContent from "./menu.js";
+import contactContent from "./contact.js";
 import fishIcon from "./images/fish_logo.png";
 import githubIcon from "./images/github_icon.svg";
 
@@ -8,6 +10,26 @@ const content = document.querySelector("#content");
 document.body.insertBefore(createHeader(), content);
 content.appendChild(homeContent());
 document.body.appendChild(createFooter());
+
+// Add event listeners for Home, Menu, Contact elements
+const home = document.querySelector(".home");
+const menu = document.querySelector(".menu");
+const contact = document.querySelector(".contact");
+
+home.addEventListener("click", () => {
+  content.textContent = "";
+  content.appendChild(homeContent());
+});
+
+menu.addEventListener("click", () => {
+  content.textContent = "";
+  content.appendChild(menuContent());
+});
+
+contact.addEventListener("click", () => {
+  content.textContent = "";
+  content.appendChild(contactContent());
+});
 
 function createHeader() {
   const header = document.createElement("header");
