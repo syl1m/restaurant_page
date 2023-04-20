@@ -1,2 +1,3 @@
 # restaurant_page
-Dynamically render a simple restaurant homepage using JavaScript DOM manipulation
+
+Create a restaurant website from The Odin Project utilizing npm and webpack.

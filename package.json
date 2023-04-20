@@ -1,7 +1,7 @@
 {
   "name": "restaurant_page",
   "version": "1.0.0",
-  "description": "Dynamically render a simple restaurant homepage using JavaScript DOM manipulation",
+  "description": "A project from The Odin Project utilizing npm and webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,8 +13,10 @@
   "author": "Sheng-Yau Lim",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.7.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
+    "style-loader": "^3.3.2",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.3"
