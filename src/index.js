@@ -82,9 +82,13 @@ function createFooter() {
   const footer = document.createElement("footer");
   footer.textContent = "Copyright © 2023 Sheng-Yau Lim";
 
+  const github_link = document.createElement("a");
+  github_link.href = "https://github.com/syl1m/restaurant_page";
+  footer.appendChild(github_link);
+
   const github_Icon = new Image();
   github_Icon.src = githubIcon;
-  footer.appendChild(github_Icon);
+  github_link.appendChild(github_Icon);
 
   return footer;
 }
