@@ -19,16 +19,19 @@ const contact = document.querySelector(".contact");
 home.addEventListener("click", () => {
   content.textContent = "";
   content.appendChild(homeContent());
+  document.body.scrollIntoView();
 });
 
 menu.addEventListener("click", () => {
   content.textContent = "";
   content.appendChild(menuContent());
+  document.body.scrollIntoView();
 });
 
 contact.addEventListener("click", () => {
   content.textContent = "";
   content.appendChild(contactContent());
+  document.body.scrollIntoView();
 });
 
 function createHeader() {

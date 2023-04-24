@@ -47,8 +47,10 @@ header {
   align-items: center;
   padding: 0rem 2rem;
   gap: 1.5rem;
-  background-color: var(--pale-gold-tranparent);
+  background-color: var(--dark-grey);
   font-size: 1.5rem;
+  position: fixed;
+  top: 0;
 }
 
 .name_logo {
@@ -78,6 +80,7 @@ header {
   align-items: center;
   flex: 1;
   padding: 3rem;
+  padding-top: 8rem;
   background-color: var(--dark-grey-transparent);
 }
 
@@ -93,7 +96,7 @@ footer {
   align-items: center;
   padding: 1rem;
   gap: 0.5rem;
-  background-color: var(--pale-gold-tranparent);
+  background-color: var(--dark-grey);
   font-size: 1rem;
 }
 
