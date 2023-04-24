@@ -96,3 +96,52 @@ footer {
   background-color: var(--pale-gold-tranparent);
   font-size: 1rem;
 }
+
+/* Menu page styling */
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_title {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.menu_category {
+  font-size: 2.5rem;
+  color: var(--pale-gold);
+}
+
+.menu_subcategory {
+  display: flex;
+  gap: 2rem;
+}
+
+.raw,
+.cooked {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--pale-gold);
+  padding: 1rem;
+}
+
+.menu_item_name {
+  font-size: 1.6rem;
+  font-family: "Futura_bold";
+}
+
+.detail_container {
+  font-size: 1.3rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.price {
+  color: var(--pale-gold);
+  font-family: "Futura_bold";
+}
